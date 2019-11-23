@@ -1,4 +1,4 @@
-Django==1.4.7
+Django==1.11.23
 django-debug-panel==0.8.1
 django-debug-toolbar==1.3.2
 django-widget-tweaks==1.4
