@@ -4,7 +4,7 @@ Fabric==1.10.2
 gunicorn==19.9.0
 mysqlclient==1.4.6 # this works with docker, locally using: MySQL-python==1.2.5
 newrelic==5.12.0.140
-paramiko==1.16.0
+paramiko==2.0.9
 Pillow==2.8.2
 pycrypto==2.6.1
 python-http-client==1.2.3
