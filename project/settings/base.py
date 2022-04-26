@@ -136,6 +136,8 @@ INSTALLED_APPS = (
     'app.api',
     'debug_toolbar',
     'oauth2_provider',
+    'django_extensions',
+    'storages'
 )
 
 # A sample logging configuration. The only tangible logging
@@ -203,3 +205,19 @@ REST_FRAMEWORK = {
         'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
     ]
 }
+
+
+AWS_ACCESS_KEY_ID = os.environ['S3_ID']
+AWS_SECRET_ACCESS_KEY = os.environ['S3_KEY']
+AWS_STORAGE_BUCKET_NAME = os.environ['S3_BUCKET']
+AWS_S3_ENDPOINT_URL = os.environ['S3_URL']
+AWS_S3_OBJECT_PARAMETERS = {
+    'CacheControl': 'max-age=86400',
+}
+AWS_S3_SIGNATURE_VERSION = 's3v4'
+AWS_LOCATION = ''
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, './resources'),
+]
+STATIC_URL = 'https://assets.contaktoapp.com/contakto-assets/'
