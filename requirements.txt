@@ -21,7 +21,7 @@ idna==2.9
 invoke==1.4.1
 Jinja2==2.11.3
 jmespath==1.0.0
-jwcrypto==1.0
+jwcrypto==1.4
 MarkupSafe==1.1.1
 mysqlclient==1.4.6
 newrelic==5.12.0.140
